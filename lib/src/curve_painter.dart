@@ -17,7 +17,7 @@ class _CurvePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     radius = math.max(size.width / 2, size.height / 2) -
         appearance.progressBarWidth * 0.5;
-    center = Offset(size.width / 2, size.height / 2);
+    center = Offset(size.width / 2, size.height);
 
     final progressBarRect = Rect.fromLTWH(0.0, 0.0, size.width, size.width);
 

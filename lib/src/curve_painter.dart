@@ -15,7 +15,7 @@ class _CurvePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    radius = math.min(size.width / 2, size.height / 2) -
+    radius = math.max(size.width / 2, size.height / 2) -
         appearance.progressBarWidth * 0.5;
     center = Offset(size.width / 2, size.height / 2);
 

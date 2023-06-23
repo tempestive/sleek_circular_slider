@@ -123,7 +123,8 @@ final slider = SleekCircularSlider(
 
 | Parameter                 |                       Default                       | Description                                                                                                             |
 | :------------------------ | :-------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------- |
-| **size** *double*                    |                        150                          | The width & height value for the slider.                    |
+| **width** *double*                    |                        150                          | The width value for the slider.                    |
+| **height** *double*                    |                        150                          | The height value for the slider.                    |
 | **startAngle** *double*              |                        150                          | The angle (in degrees) the slider begins with.            |
 | **angleRange** *double*              |                        240                          | The angle range (in degrees) the slider reaches when maximum value set. |
 | **counterClockwise** *bool*          |                       false                         | The setting indicating direction of the widget.                         |
@@ -142,7 +143,7 @@ final slider = SleekCircularSlider(
 | Parameter                 |                       Default                       | Description                                                                                                             |
 | :------------------------ | :-------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------- |
 | **trackWidth** *double*              |                progressBarWidth / 4                 | The width of the slider's track.                        |
-| **progressBarWidth** *double*        |                 slider's size / 10                  | The width of the slider's progress bar.                 |
+| **progressBarWidth** *double*        |                 slider's width / 10                  | The width of the slider's progress bar.                 |
 | **shadowWidth** *double*             |                progressBarWidth * 1.4               | The width of the slider's shadow.  |
 | **handlerSize** *double*             |                progressBarWidth / 5                 | The size of the slider's handler. |
 
@@ -152,7 +153,7 @@ final slider = SleekCircularSlider(
 | Parameter                 |                       Default                       | Description                                                                                                             |
 | :------------------------ | :-------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------- |
 | **trackColor** *Color*               |                #DCBEFB                              | The color of the slider's track.                        |
-| **trackColors** *List<Color>*        |                  null                               | The list of colors for the track's gradient.                  |                 
+| **trackColors** *List<Color>*        |                  null                               | The list of colors for the track's gradient.                  |
 | **trackGradientStartAngle** *double* |                   0                                 | The start angle for the track's gradient.           |
 | **trackGradientEndAngle** *double*   |                  180                                | The end angle for the track's gradient.           |
 | **progressBarColor** *Color*         |                                                     | The color of the slider's progress bar. Won't be used if the slider uses gradient **progressBarColors != null**  |
@@ -179,12 +180,12 @@ final slider = SleekCircularSlider(
 | **modifier** *String PercentageModifier(double percentage)* | closure adding the **%** character | The closure allowing to modify how a current value of the slider is displayed. |
 
 **Example of the modifier**
- ```dart 
+ ```dart
  String percentageModifier(double value) {
     final roundedValue = value.ceil().toInt().toString();
     return '$roundedValue %';
   }
-``` 
+```
 It will convert a current value to *int* and add the **%** sufix to it.
 
 ### YouTube video

@@ -128,7 +128,7 @@ final CircularSliderAppearance appearance01 = CircularSliderAppearance(
     customColors: customColors01,
     startAngle: 270,
     angleRange: 360,
-    size: 350.0,
+    width: 350.0,
     animationEnabled: false);
 
 final customWidth02 =
@@ -146,7 +146,7 @@ final CircularSliderAppearance appearance02 = CircularSliderAppearance(
     customColors: customColors02,
     startAngle: 270,
     angleRange: 360,
-    size: 290.0,
+    width: 290.0,
     animationEnabled: false);
 
 final customWidth03 =
@@ -164,5 +164,5 @@ final CircularSliderAppearance appearance03 = CircularSliderAppearance(
     customColors: customColors03,
     startAngle: 270,
     angleRange: 360,
-    size: 210.0,
+    width: 210.0,
     animationEnabled: false);

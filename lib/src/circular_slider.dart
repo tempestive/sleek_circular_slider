@@ -159,7 +159,7 @@ class _SleekCircularSliderState extends State<SleekCircularSlider>
         },
         child: _buildRotatingPainter(
             rotation: _rotation,
-            size: Size(widget.appearance.size, widget.appearance.size)));
+            size: Size(widget.appearance.width, widget.appearance.height)));
   }
 
   @override

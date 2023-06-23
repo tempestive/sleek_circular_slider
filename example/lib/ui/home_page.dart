@@ -40,7 +40,7 @@ final CircularSliderAppearance appearance02 = CircularSliderAppearance(
     infoProperties: info02,
     startAngle: 180,
     angleRange: 270,
-    size: 200.0,
+    width: 200.0,
     animationEnabled: false);
 final viewModel02 = ExampleViewModel(
     appearance: appearance02,
@@ -78,7 +78,7 @@ final CircularSliderAppearance appearance03 = CircularSliderAppearance(
     customWidths: customWidth03,
     customColors: customColors03,
     infoProperties: info03,
-    size: 250.0,
+    width: 250.0,
     startAngle: 180,
     angleRange: 340);
 final viewModel03 = ExampleViewModel(
@@ -118,7 +118,7 @@ final CircularSliderAppearance appearance04 = CircularSliderAppearance(
     infoProperties: info04,
     startAngle: 90,
     angleRange: 90,
-    size: 200.0,
+    width: 200.0,
     animationEnabled: true);
 final viewModel04 = ExampleViewModel(
     appearance: appearance04,
@@ -158,7 +158,7 @@ final CircularSliderAppearance appearance05 = CircularSliderAppearance(
     infoProperties: info05,
     startAngle: 270,
     angleRange: 360,
-    size: 350.0);
+    width: 350.0);
 final viewModel05 = ExampleViewModel(
     appearance: appearance05,
     min: 0,
@@ -188,7 +188,7 @@ final CircularSliderAppearance appearance06 = CircularSliderAppearance(
     customColors: customColors06,
     startAngle: 180,
     angleRange: 360,
-    size: 300.0);
+    width: 300.0);
 final viewModel06 = ExampleViewModel(
     innerWidget: (double value) {
       return Transform.rotate(
@@ -241,7 +241,7 @@ final CircularSliderAppearance appearance07 = CircularSliderAppearance(
     customColors: customColors07,
     startAngle: 180,
     angleRange: 360,
-    size: 130.0,
+    width: 130.0,
     spinnerMode: true);
 final viewModel07 = ExampleViewModel(
     appearance: appearance07,
@@ -268,7 +268,7 @@ final customColors08 = CustomSliderColors(
 final CircularSliderAppearance appearance08 = CircularSliderAppearance(
     customWidths: customWidth08,
     customColors: customColors08,
-    size: 230.0,
+    width: 230.0,
     spinnerMode: true,
     spinnerDuration: 1000);
 final viewModel08 =
@@ -301,7 +301,7 @@ final CircularSliderAppearance appearance09 = CircularSliderAppearance(
     customColors: customColors09,
     startAngle: 55,
     angleRange: 110,
-    size: 230.0,
+    width: 230.0,
     counterClockwise: true);
 final viewModel09 =
     ExampleViewModel(appearance: appearance09, value: 50, pageColors: [
@@ -348,7 +348,7 @@ final CircularSliderAppearance appearance10 = CircularSliderAppearance(
     startAngle: 180,
     angleRange: 240,
     infoProperties: info10,
-    size: 280.0,
+    width: 280.0,
     counterClockwise: true,
     animDurationMultiplier: 3);
 final viewModel10 = ExampleViewModel(

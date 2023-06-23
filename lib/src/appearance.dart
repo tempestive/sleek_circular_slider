@@ -30,7 +30,8 @@ class CircularSliderAppearance {
     return '$roundedValue %';
   }
 
-  final double size;
+  final double width;
+  final double height;
   final double startAngle;
   final double angleRange;
   final bool animationEnabled;
@@ -48,7 +49,7 @@ class CircularSliderAppearance {
   double? get _customHandlerSize => customWidths?.handlerSize;
 
   double get trackWidth => _customTrackWidth ?? progressBarWidth / 4.0;
-  double get progressBarWidth => _customProgressBarWidth ?? size / 10.0;
+  double get progressBarWidth => _customProgressBarWidth ?? width / 10.0;
   double get handlerSize => _customHandlerSize ?? progressBarWidth / 5.0;
   double get shadowWidth => _customShadowWidth ?? progressBarWidth * 1.4;
 
@@ -112,28 +113,29 @@ class CircularSliderAppearance {
   TextStyle get infoMainLabelStyle {
     return _mainLabelStyle ?? TextStyle(
         fontWeight: FontWeight.w100,
-        fontSize: size / 5.0,
+        fontSize: width / 5.0,
         color: Color.fromRGBO(30, 0, 59, 1.0));
   }
 
   TextStyle get infoTopLabelStyle {
     return _topLabelStyle ?? TextStyle(
         fontWeight: FontWeight.w600,
-        fontSize: size / 10.0,
+        fontSize: width / 10.0,
         color: Color.fromRGBO(147, 81, 120, 1.0));
   }
 
   TextStyle get infoBottomLabelStyle {
     return _bottomLabelStyle ?? TextStyle(
         fontWeight: FontWeight.w600,
-        fontSize: size / 10.0,
+        fontSize: width / 10.0,
         color: Color.fromRGBO(147, 81, 120, 1.0));
   }
 
   const CircularSliderAppearance(
       {this.customWidths,
       this.customColors,
-      this.size = _defaultSize,
+      this.width = _defaultSize,
+      this.height = _defaultSize,
       this.startAngle = _defaultStartAngle,
       this.angleRange = _defaultAngleRange,
       this.infoProperties,

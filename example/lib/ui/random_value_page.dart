@@ -82,4 +82,4 @@ final CircularSliderAppearance appearance01 = CircularSliderAppearance(
     infoProperties: info,
     startAngle: 180,
     angleRange: 180,
-    size: 250.0);
+    width: 250.0);
